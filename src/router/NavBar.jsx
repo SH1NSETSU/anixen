@@ -32,7 +32,6 @@ const NavBar = () =>
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/top">Top Airing</Nav.Link>
-            <Nav.Link href="/movies">Movies</Nav.Link>
             <Nav.Link href="/genres">Genres</Nav.Link>
           </Nav>
           <Form onSubmit={find} className="d-flex">

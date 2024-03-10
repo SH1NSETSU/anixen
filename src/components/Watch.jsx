@@ -76,3 +76,5 @@ const Watch = () =>
         </Container>
     )
 }
+
+export default Watch

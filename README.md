@@ -1,13 +1,24 @@
-# freeNime
-this project was build using the [consumet-api](https://github.com/consumet/api.consumet.org) 
+<div align="center">
 
-### WebSite
-[Check the site](https://freenime.netlify.app/ "freeNime")
+# aniXen
 
-## ToDo
-- Add user authentication
-- Filter and order episodes
-- Add toWatch list
+</div>
 
-### Contact
-leandroGonzalezMat@gmail.com
+<p align="center">
+  <img src="https://github.com/g0T-h/anixen/blob/main/public/FNLogo.png">
+</p>
+
+---
+
+# Overview
+- Yet another ad-free anime streaming website.
+- Check out the website [here](https://anixen.vercel.app/)
+
+# Deploying
+- You can deploy with Vercel or Netlify.
+
+# Contributions
+- All contributions are welcome!
+
+## Credits:
+* [rootm0s for winpwnage](https://github.com/rootm0s/WinPwnage)

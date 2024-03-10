@@ -19,6 +19,3 @@
 
 # Contributions
 - All contributions are welcome!
-
-## Credits:
-* [rootm0s for winpwnage](https://github.com/rootm0s/WinPwnage)

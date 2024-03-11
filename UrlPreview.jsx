@@ -23,6 +23,7 @@ const UrlPreview = ({ url }) => {
 
     fetchUrlPreview();
 
+    // Cleanup function
     return () => {
       // Cleanup code if needed
     };
@@ -40,25 +41,23 @@ const UrlPreview = ({ url }) => {
     return null;
   }
 
-return (
-  <div className="url-preview">
-    {previewData.image !== "" ? (
-      <img src={previewData.image} alt="Preview" />
-    ) : (
-      <img
-        src={`https://www.google.com/s2/favicons?domain=${new URL(
-          previewData.url
-        ).hostname}`}
-        alt="Preview"
-      />
-    )}
-    <div className="details">
-      <h3>{previewData.title}</h3>
-      <p>{previewData.description}</p>
-      <a href={previewData.url}>Read more</a>
+  return (
+    <div className="url-preview">
+      {previewData.image ? (
+        <img src={previewData.image} alt="Preview" />
+      ) : (
+        <img
+          src={`https://www.google.com/s2/favicons?domain=${new URL(previewData.url).hostname}`}
+          alt="Preview"
+        />
+      )}
+      <div className="details">
+        <h3>{previewData.title}</h3>
+        <p>{previewData.description}</p>
+        <a href={previewData.url}>Read more</a>
+      </div>
     </div>
-  </div>
-);
-
+  );
+};
 
 export default UrlPreview;

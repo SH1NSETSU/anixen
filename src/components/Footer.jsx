@@ -9,7 +9,7 @@ const Footer = () => {
             |
             <a className="contact" style={{textDecoration:'none',color:'white'}} href="https://ernn.xyz" target="_blank"> xenlight </a>
             | 
-            <a className="contact" style={{textDecoration:'none',color:'white'}}href="https://dsc.gg/anixen" target="_blank" > contact </a>
+            <a className="contact" style={{textDecoration:'none',color:'white'}}href="https://dsc.gg/anixen" target="_blank" > discord </a>
             | © 2024
         </footer>
     )

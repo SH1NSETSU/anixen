@@ -2,7 +2,7 @@
 import './App.css';
 import { Container } from 'react-bootstrap';
 import MainPage from './components/MainPage';
-import UrlPreview from './UrlPreview'; // Import the UrlPreview component
+import UrlPreview from '../UrlPreview'; // Import the UrlPreview component
 
 function App() {
   return (

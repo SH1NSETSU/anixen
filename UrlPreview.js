@@ -1,4 +1,3 @@
-// UrlPreview.js
 import React, { useState, useEffect } from 'react';
 
 const UrlPreview = ({ url }) => {
@@ -30,11 +29,16 @@ const UrlPreview = ({ url }) => {
   }, [url]);
 
   if (loading) {
-  return <div>Loading...</div>;
-}
+    return <div>Loading...</div>;
+  }
 
-  if (error) return <div>Error: {error.message}</div>;
-  if (!previewData) return null;
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+
+  if (!previewData) {
+    return null;
+  }
 
   return (
     <div className="url-preview">

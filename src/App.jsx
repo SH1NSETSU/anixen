@@ -9,7 +9,7 @@ function App() {
     <Container>
       <MainPage />
       {/* Example usage of UrlPreview component */}
-      <UrlPreview url="https://example.com" />
+      <UrlPreview url="https://anixen.vercel.app/" />
     </Container>
   );
 }

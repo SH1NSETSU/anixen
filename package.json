@@ -16,9 +16,7 @@
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
     "react-player": "^2.13.0",
-    "react-router-dom": "^6.16.0",
-    "react-use-url-preview": "^1.0.0",
-    "react-card-url-preview": "^1.0.0"
+    "react-router-dom": "^6.16.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

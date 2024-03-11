@@ -53,7 +53,7 @@ const Watch = () =>
                     volume={0.70}
                     pip
                     width={'100%'}
-                    height={'450px'}
+                    height={'700px'}
                     ></ReactPlayer>
                 </Card.Body>
                 <Card.Footer className=''>

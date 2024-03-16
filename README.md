@@ -10,10 +10,12 @@
 </p>
 
 ---
+# Demo
+- https://anixen.vercel.app/
 
 # Overview
 - Yet another ad-free anime streaming website.
-- Check out the website [here](https://anixen.vercel.app/)
+- Check out the website [here](https://anixen-v2.vercel.app/)
 
 # Deploying
 - You can deploy with Vercel or Netlify.

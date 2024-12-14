@@ -3,7 +3,7 @@ import useFetch from "./useFetch"
 export default function useEpisode (epID)
 {
     const list = useFetch('watch/'+epID)
-    const ep = list?.sources.find(obj=>obj.quality.includes('default'))
+    const ep = list?.sources.find(obj=>obj.quality.includes('backup'))
 
     const index = epID.lastIndexOf('-')
     const findEp = epID.substring(index+1)

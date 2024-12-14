@@ -1,7 +1,6 @@
 <div align="center">
 
-# aniXen is migrating to V2 and will be no longer open source, and V1 will no longer receive updates.
-# You can still use this to build your very own anime streaming website. However, keep in mind that I will no longer provide support for V1.
+# aniLeo will no longer receive updates or be maintained. you are free to take this as a template
 
 </div>
 

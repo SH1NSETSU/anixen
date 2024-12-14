@@ -16,7 +16,8 @@
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
     "react-player": "^2.13.0",
-    "react-router-dom": "^6.16.0"
+    "react-router-dom": "^6.16.0",
+    "hls.js": "^1.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

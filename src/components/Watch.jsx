@@ -1,12 +1,48 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import useEpisode from '../hooks/useEpisode';
+import { useEffect, useRef, useState } from 'react';
 import Loading from './Loading';
 import { Alert, Button, ButtonGroup, Card, Container, DropdownButton, DropdownItem } from 'react-bootstrap';
+import Hls from 'hls.js';
 
 const Watch = () => {
     const { epID } = useParams();
     const episode = useEpisode(epID);
     const navigate = useNavigate();
+    const videoRef = useRef(null);
+    const [isPlaying, setIsPlaying] = useState(false);
+
+    useEffect(() => {
+        if (videoRef.current && episode.ep) {
+            const video = videoRef.current;
+            const hls = new Hls();
+            const streamUrl = episode.ep.url;
+
+            if (Hls.isSupported()) {
+                hls.loadSource(streamUrl);
+                hls.attachMedia(video);
+
+                hls.on(Hls.Events.MANIFEST_PARSED, () => {
+                    video.play();
+                    setIsPlaying(true);
+                });
+
+                hls.on(Hls.Events.ERROR, (event, data) => {
+                    if (data.fatal) {
+                        console.error("HLS.js error:", data);
+                        setIsPlaying(false);
+                    }
+                });
+            }
+        }
+
+        return () => {
+            if (videoRef.current) {
+                videoRef.current.pause();
+                setIsPlaying(false);
+            }
+        };
+    }, [episode.ep]);
 
     const prev = () => {
         navigate('/watch/' + episode.prev);
@@ -38,16 +74,14 @@ const Watch = () => {
                 <Card.Header>{epID.toUpperCase()}</Card.Header>
                 <Card.Body>
                     {episode.ep ? (
-                        <iframe
-                            src={episode.ep.url}
+                        <video
+                            ref={videoRef}
                             className="video"
-                            style={{
-                                width: '100%',
-                                height: '700px',
-                                border: 'none',
-                            }}
-                            allowFullScreen
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            controls
+                            width="100%"
+                            height="700px"
+                            style={{ border: 'none' }}
+                            muted
                         />
                     ) : (
                         <Loading />

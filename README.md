@@ -5,7 +5,7 @@
 </div>
 
 <p align="center">
-  <img src="https://github.com/g0T-h/anixen/blob/main/public/FNLogo.png">
+  <img src="https://github.com/d1gitalmemories/d1gitalanime/blob/main/public/logo.jpg?raw=true">
 </p>
 
 ---

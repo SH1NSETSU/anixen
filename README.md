@@ -1,6 +1,6 @@
 <div align="center">
 
-# aniLeo will no longer receive updates or be maintained. you are free to take this as a template
+# d1gitalanime will no longer receive updates or be maintained. you are free to take this as a template
 
 </div>
 
@@ -10,12 +10,11 @@
 
 ---
 # Demo
-- https://anixen.vercel.app/
+- https://d1gital-animedemo.vercel.app/
 
 # Overview
 - Yet another ad-free anime streaming website.
-- Check out the website [here](https://anixen-v2.vercel.app/)
-
+  
 # Deploying
 - You can deploy with Vercel or Netlify.
 
